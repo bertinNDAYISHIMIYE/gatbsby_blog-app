@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+
+media_folder: Desktop/my-blog-gatsby/src/images/thumbnails
+public_folder: ../images/thumbnails/
+
+
+collections:
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog posts" # Used in the UI
+    folder: "/Desktop/my-blog-gatsby/src/blogs/" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "slug", name: "slug", widget: "string"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Publish Date", name: "Publish Date", widget: "datetime"}
+      - {label: "thumb", name: "thumb", widget: "image"}
+      - { label: 'Body', name: 'body', widget: 'markdown' }
