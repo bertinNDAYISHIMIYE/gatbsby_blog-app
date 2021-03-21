@@ -1,96 +1,192 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
 * {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  font-family: 'Inconsolata', monospace;
-  color: white;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: 'Inconsolata', monospace;
+	color: white;
 }
-html, body {
-  min-height: 100%;
+html,
+body {
+	min-height: 100%;
 }
 body {
-  background: black;
-  background-repeat: no-repeat;
+	background: black;
+	background-repeat: no-repeat;
 }
 p {
-  margin: 16px auto;
-  line-height: 1.5em;
+	margin: 16px auto;
+	line-height: 1.5em;
 }
 
 /* layout & nav */
 .layout {
-  max-width: 960px;
-  margin: 0 auto;
+	max-width: 960px;
+	margin: 0 auto;
 }
 nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 40px auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: auto;
 }
 nav .links {
-  display: inline-block;
-  text-align: right;
+	display: inline-block;
+	text-align: right;
 }
 nav a {
-  display: inline-block;
-  margin-left: 20px;
-  font-weight: 400;
-  padding-bottom: 8px;
-  border-bottom: 3px solid transparent;
+	display: inline-block;
+	margin-left: 20px;
+	font-weight: 400;
+	padding-bottom: 8px;
+	border-bottom: 3px solid transparent;
 }
 nav a:hover {
-  color: #f1356d;
+	color: #f1356d;
 }
 nav a:active {
-    border-color: white;
-  }
-.blogs {
-    text-align: center;
-  }
-  .blogs > h2 {
-    font-size: 3em;
-    margin-top: 80px;
-  }
-  .blogs > h3 {
-    font-size: 2em;
-    font-weight: 400;
-  }
-  .blogs-preview {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 80px;
-    margin: 80px 20px;
-  }
-  .blogs-preview .single-blog:hover {
-    box-shadow: 1px 3px 5px #f1356d;
-  }
-  .blogs-preview h3 {
-    text-align: center;
-    margin: 20px auto 0px;
-    font-weight: 500;
-  }
-  .blogs-preview p {
-    color: #ccc;
-    margin-top: 4px;
-  }
-  .details h2 {
-    font-size: 3.5em;
-    margin-top: 80px;
-  }
-  .details h3 {
-    font-size: 2em;
-    font-weight: 400;
-    margin-bottom: 40px;
-  }
-  .html {
-    margin-top: 40px;
-  }
-  .featured {
-    margin-bottom: 40px;
-  }
-footer p{
-  text-align: center;
-  color: #bbb;
-  margin: 40px auto;
+	border-color: white;
 }
+.main-mobile {
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	display: none;
+	z-index: 1;
+}
+.nav-menu {
+	height: 100vh;
+	width: 80%;
+	background-color: #f1356d;
+	float: left;
+}
+.nav-close {
+	float: left;
+	width: 20%;
+	height: 100vh;
+	opacity: 0.7;
+	background-color: #242424;
+}
+.blogs {
+	text-align: center;
+}
+.blogs > h2 {
+	font-size: 3em;
+	margin-top: 80px;
+}
+.blogs > h3 {
+	font-size: 2em;
+	font-weight: 400;
+}
+.blogs-preview {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 80px;
+	margin: 80px 20px;
+}
+.blogs-preview .single-blog:hover {
+	box-shadow: 1px 3px 5px #f1356d;
+}
+.blogs-preview h3 {
+	text-align: center;
+	margin: 20px auto 0px;
+	font-weight: 500;
+}
+.blogs-preview p {
+	color: #ccc;
+	margin-top: 4px;
+}
+.details h2 {
+	font-size: 3.5em;
+	margin-top: 80px;
+}
+.details h3 {
+	font-size: 2em;
+	font-weight: 400;
+	margin-bottom: 40px;
+}
+.html {
+	margin-top: 40px;
+}
+.featured {
+	margin-bottom: 40px;
+}
+.gatsby-image-wrapper {
+	height: 168.45px;
+}
+
+/* about */
+.title {
+	text-align: center;
+}
+
+.about-page {
+	display: flex;
+	text-align: center;
+	min-height: 620px;
+}
+main {
+	display: flex;
+	max-width: 100%;
+	flex-direction: column;
+	justify-content: space-between;
+}
+main .about-xull {
+	margin: 70px 0 70px 20px;
+}
+main .about-content {
+	margin-left: 10px;
+}
+
+.about-content ul {
+	display: flex;
+	text-align: center;
+}
+
+/* contact */
+
+.mapclass {
+	height: 180px;
+}
+
+/* footer */
+
+footer p {
+	text-align: center;
+	color: #bbb;
+	margin: 40px auto;
+	border-top: 1px dotted #f2f2f2;
+	padding: 40px 20px 0px 20px;
+	bottom: 0;
+}
+
+/* media querries */
+@media screen and (max-width: 760px) {
+	.blogs-preview {
+		display: flex;
+		flex-direction: column;
+		margin: 80px 20px;
+	}
+	.gatsby-image-wrapper {
+		width: 65%;
+		height: 65%;
+		align-items: center;
+		margin-left: 15%;
+	}
+
+	.about-page {
+		flex-direction: column;
+		max-width: 500px;
+	}
+	nav .links {
+		display: none;
+	}
+	.main-mobile {
+		display: block;
+	}
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* burger */

@@ -1,26 +1,44 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React, { useState } from 'react';
+import { Link } from 'gatsby';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 export default function Navbar() {
-//   const data = useStaticQuery(graphql`
-//     {
-//       site {
-//         siteMetadata {
-//           title
-//         }
-//       }
-//     }
-//   `)
-  //const { title } = data.site.siteMetadata
+	const [ open, setOpen ] = useState(false);
+	console.log('----->', open);
+	return (
+		<nav>
+			{open ? (
+				<div className="main-mobile">
+					<div className="nav-menu">
+						{' '}
+						<Link to="/">Blogs</Link>
+						<Link to="/about">About</Link>
+						<Link to="/contact">Contact</Link>
+					</div>
+					<div
+						className="nav-close"
+						onClick={() => {
+							setOpen(!open);
+						}}
+					>
+						close
+					</div>
+				</div>
+			) : null}
 
-  return (
-    <nav>
-      <h1><Link to="/">BerryBlogs</Link></h1>
-      <div className="links">
-        <Link to="/">Blogs</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Contact</Link>
-      </div>
-    </nav>
-  )
+			<GiHamburgerMenu
+				onClick={() => {
+					setOpen(!open);
+				}}
+			/>
+			<h1>
+				<Link to="/">BerryBlogs</Link>
+			</h1>
+			<div className="links">
+				<Link to="/">Blogs</Link>
+				<Link to="/about">About</Link>
+				<Link to="/contact">Contact</Link>
+			</div>
+		</nav>
+	);
 }

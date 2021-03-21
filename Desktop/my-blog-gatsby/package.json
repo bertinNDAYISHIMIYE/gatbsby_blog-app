@@ -22,10 +22,14 @@
     "gatsby-source-filesystem": "^3.1.0",
     "gatsby-transformer-remark": "^3.1.0",
     "gatsby-transformer-sharp": "^3.1.0",
+    "leaflet": "^1.7.1",
     "netlify-cms-app": "^2.14.30",
     "prismjs": "^1.23.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-google-maps": "^9.4.5",
+    "react-icons": "^4.2.0",
+    "react-leaflet": "^3.1.0"
   },
   "devDependencies": {
     "prettier": "2.2.1"
