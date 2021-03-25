@@ -68,6 +68,10 @@ nav a:active {
 	background-color: #242424;
 	display: none;
 }
+
+.burger{
+	display: none;
+}
 .blogs {
 	text-align: center;
 }
@@ -189,6 +193,9 @@ footer p {
     display: flex;
     flex-direction: column;
   }
+	.burger{
+	display: block;	
+	}
 }
 
 /* burger */
