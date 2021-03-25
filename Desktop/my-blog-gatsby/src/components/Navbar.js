@@ -25,12 +25,13 @@ export default function Navbar() {
 					</div>
 				</div>
 			) : null}
-
+                       <div className="burger"> 
 			<GiHamburgerMenu
 				onClick={() => {
 					setOpen(!open);
 				}}
 			/>
+                         </div>
 			<h1>
 				<Link to="/">BerryBlogs</Link>
 			</h1>
