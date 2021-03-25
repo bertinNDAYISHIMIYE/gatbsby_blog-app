@@ -9,6 +9,7 @@ import '../styles/index.css'
 
 const Contact = () => {
     return (
+        <h1>damn</h1>
    //     <Layout>
 //        <div className="mapclass">
 //        <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
