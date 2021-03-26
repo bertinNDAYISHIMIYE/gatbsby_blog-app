@@ -183,6 +183,14 @@ footer p {
 		flex-direction: column;
 		max-width: 500px;
 	}
+	.about-page img{
+		width: 70%;
+		height: 70%;
+	}
+	.about-xull p,
+	.about-profession p{
+		padding: 10px;
+	}
 	nav .links {
 		display: none;
 	}
