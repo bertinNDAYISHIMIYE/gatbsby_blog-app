@@ -34,6 +34,7 @@ nav .links {
 	text-align: right;
 }
 nav a {
+	 margin-top: 10px;
 	display: inline-block;
 	margin-left: 20px;
 	font-weight: 400;
@@ -200,8 +201,10 @@ footer p {
   .nav-menu {
     display: flex;
     flex-direction: column;
+    padding-top: 20px;
   }
 	.burger{
+        margin-top: 10px;
 	display: block;	
 	}
 }
