@@ -9,8 +9,9 @@ import '../styles/index.css'
 
 const Contact = () => {
     return (
-        <h1>map section</h1>
-   //     <Layout>
+        <Layout>
+                <h1>map section</h1>
+                <h1>contact section</h1>
 //        <div className="mapclass">
 //        <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
 //   <TileLayer
@@ -24,7 +25,7 @@ const Contact = () => {
 //   </Marker>
 // </MapContainer>
  //      </div>
- //      </Layout>
+       </Layout>
      );
 }
  
