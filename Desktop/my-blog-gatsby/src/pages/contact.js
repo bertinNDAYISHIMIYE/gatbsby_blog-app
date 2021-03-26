@@ -13,6 +13,11 @@ const Contact = () => {
           
       <div className="mapclass">  
         <h1>map section</h1>
+        </div>
+        <div className="contact-info">
+          <h1>contact section</h1>
+        </div>
+      </Layout>
 //        <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
 //   <TileLayer
 //     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -24,12 +29,9 @@ const Contact = () => {
 //     </Popup>
 //   </Marker>
 // </MapContainer>
-      </div>
-        <div className="contact-info">
-          <h1>contact section</h1>
-        </div>
+
         
-       </Layout>
+
      );
 }
  
