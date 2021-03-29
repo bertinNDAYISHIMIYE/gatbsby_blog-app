@@ -19,11 +19,11 @@ thumb: ../images/thumbnails/gatsby.png
 * ##### \    Installations
 * ##### \    Build your first simple page
 
-####  1.What is gatsby?
+
+
+#### 1.What is gatsby?
 
 **Gatsby** is an open-source static website generator (SSG) that is based on the frontend development framework React and makes use of Webpack and GraphQL technology. It can be used to build static sites that are progressive web apps, follow the latest web standards, and optimized for speed and security
-
-
 
 #### 2. Why gatsby?
 
@@ -47,7 +47,7 @@ Gatsby is similar in that it can also help you set up an application and removes
 
 #### 4.Installations
 
-First thing first, What is a stater?` `[Starters](https://www.gatsbyjs.com/docs/starters/) are boilerplate Gatsby sites maintained officially, or by the community.
+First thing first, What is a stater?[Starters](https://www.gatsbyjs.com/docs/starters/) are boilerplate Gatsby sites maintained officially, or by the community.
 
 ###### Install gatsby CLI
 
@@ -79,13 +79,17 @@ After the installation run the following commands:
 
 \`\``shell
 
+```shell
 cd hello-world
+```
 
 \`\``
 
 \`\``shell
 
+```shell
 gatsby develop
+```
 
 \`\``
 
@@ -97,14 +101,6 @@ Open a new tab in your browser and go to `http://localhost:8000/`. You should n
 
 Now, you have a basic gatsby site set up you can go on and make your changes.
 
-![](../images/thumbnails/gatsby_logo.png)
-
-
-
 There is still more to cover about Gatsby. One of the best ways to learn about them is to go through their documentation <https://www.gatsbyjs.com/docs/> .
-
-
-
-
 
 I hope you found this guide useful!
