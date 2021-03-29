@@ -19,8 +19,6 @@ thumb: ../images/thumbnails/gatsby.png
 * ##### \    Installations
 * ##### \    Build your first simple page
 
-
-
 #### 1.What is gatsby?
 
 **Gatsby** is an open-source static website generator (SSG) that is based on the frontend development framework React and makes use of Webpack and GraphQL technology. It can be used to build static sites that are progressive web apps, follow the latest web standards, and optimized for speed and security
@@ -53,23 +51,23 @@ First thing first, What is a stater?[Starters](https://www.gatsbyjs.com/docs/sta
 
 Gatsby CLI (Command Line Interface) is the tool that lets you build Gatsby-powered sites. By running this command, we can install any Gatsby sites and the plugins we want.
 
-\`\``shell
+
 
 ```shell
 npm install -g gatsby-cli
 ```
 
-\`\``
+
 
 ###### Generate a new site based on the starter. In the terminal, run:
 
-\`\``shell
+
 
 ```shell
 gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-world
 ```
 
-\`\``
+
 
 * **new** - This is the command line that creates a new Gatsby project
 * Hello-world - This is the name of the project. You can name it whatever you want here.
@@ -77,21 +75,21 @@ gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-world
 
 After the installation run the following commands:
 
-\`\``shell
+
 
 ```shell
 cd hello-world
 ```
 
-\`\``
 
-\`\``shell
+
+
 
 ```shell
 gatsby develop
 ```
 
-\`\``
+
 
 gatsby develop will start up your server side complilation and bundles all required files together ready to be renderd to DOM
 
