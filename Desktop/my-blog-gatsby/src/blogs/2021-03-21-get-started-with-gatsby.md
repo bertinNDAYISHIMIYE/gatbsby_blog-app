@@ -1,5 +1,5 @@
 ---
-title: get started with gatsby
+title: get started with react
 slug: gatsby-start
 author: berry
 Publish Date: 2021-03-21T09:01:39.629Z
